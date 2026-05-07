@@ -11,21 +11,6 @@
 ### 🔗 Portfolio URL:
 https://your-portfolio-link.vercel.app
 
----
-
-# 📸 Project Preview
-
-## 🖥 Desktop View
-![Desktop Screenshot](./public/desktop-preview.png)
-
-## 📱 Mobile View
-![Mobile Screenshot](./public/mobile-preview.png)
-
-## 🎬 Animations & Parallax
-![Animations Preview](./public/animations-preview.gif)
-
----
-
 # ✨ Features
 
 | Feature | Description |
