@@ -1,16 +1,170 @@
-# React + Vite
+# 🌟 Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Portfolio Banner](./public/portfolio-banner.png)
 
-Currently, two official plugins are available:
+> A fully responsive, animated personal portfolio website built with **React + Vite + Tailwind CSS + Framer Motion** to showcase my skills, projects, and professional journey.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+# 🚀 Live Demo
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 🔗 Portfolio URL:
+https://your-portfolio-link.vercel.app
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+# 📸 Project Preview
+
+## 🖥 Desktop View
+![Desktop Screenshot](./public/desktop-preview.png)
+
+## 📱 Mobile View
+![Mobile Screenshot](./public/mobile-preview.png)
+
+## 🎬 Animations & Parallax
+![Animations Preview](./public/animations-preview.gif)
+
+---
+
+# ✨ Features
+
+| Feature | Description |
+|--------|-------------|
+| Responsive Design | Mobile, tablet, desktop optimized |
+| Hero Section | Professional introduction with CTA |
+| About Section | Personal profile + summary |
+| Skills Section | Visual tech stack badges |
+| Projects Section | 3+ featured projects |
+| Contact Section | Email, GitHub, LinkedIn |
+| Parallax Effects | Smooth scroll depth |
+| Scroll Animations | Fade, slide, stagger |
+| Accessibility | Reduced motion support |
+| SEO Optimized | Meta tags + Lighthouse ready |
+
+---
+
+# 🛠 Tech Stack
+
+| Technology | Usage |
+|-----------|------|
+| React.js | Frontend Framework |
+| Vite | Fast Build Tool |
+| Tailwind CSS | Styling |
+| Framer Motion | Animations |
+| React Icons | Icons |
+| GitHub | Version Control |
+| Vercel | Deployment |
+
+---
+
+# 📂 Folder Structure
+
+```bash
+portfolio-site/
+│
+├── public/
+│   ├── profile.jpg
+│   ├── desktop-preview.png
+│   ├── mobile-preview.png
+│   ├── animations-preview.gif
+│   └── resume.pdf
+│
+├── src/
+│   ├── components/
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   └── Contact.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── package.json
+├── tailwind.config.js
+├── vite.config.js
+└── README.md
+⚙ Installation & Setup
+Clone Repository
+git clone https://github.com/yourusername/portfolio-site.git
+cd portfolio-site
+Install Dependencies
+npm install
+Run Development Server
+npm run dev
+Build Production
+npm run build
+
+📊 Lighthouse Scores Target
+CategoryScorePerformance80+Accessibility90+Best Practices90+SEO85+
+
+♿ Accessibility Support
+@media (prefers-reduced-motion: reduce) {  * {    animation-duration: 0.01ms !important;    transition-duration: 0.01ms !important;    scroll-behavior: auto !important;  }}
+
+📌 Featured Projects
+1️⃣ AI Resume Builder
+
+React
+
+Node.js
+
+MongoDB
+
+Docker
+
+2️⃣ Real-Time Collaborative Whiteboard
+
+React
+
+Socket.io
+
+Canvas API
+
+PostgreSQL
+
+3️⃣ Job Board Application
+
+React
+
+Tailwind CSS
+
+LocalStorage
+
+Docker
+
+
+
+👩‍💻 Author
+Blessy Nookathati
+
+📧 Email: your-email@example.com
+
+💼 LinkedIn: https://linkedin.com/in/yourprofile
+
+💻 GitHub: https://github.com/yourusername
+
+
+🏆 Achievements
+
+Fully responsive
+
+Production-ready
+
+Recruiter-friendly
+
+Modern UI/UX
+
+Smooth animations
+
+Public deployment
+
+
+📜 License
+This project is licensed under the MIT License.
+
+⭐ Support
+If you like this project:
+Give it a ⭐ on GitHub!
+
