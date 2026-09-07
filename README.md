@@ -1,150 +1,107 @@
-# 🌟 Personal Portfolio Website
-> A fully responsive, animated personal portfolio website built with **React + Vite + Tailwind CSS + Framer Motion** to showcase my skills, projects, and professional journey.
->
-> # 🚀 Live Demo
+# 🌟 Modern Personal Portfolio Website
 
-### 🔗 Portfolio URL:
-https://personal-portfoliooo.vercel.app/
-
-# ✨ Features
-
-| Feature | Description |
-|--------|-------------|
-| Responsive Design | Mobile, tablet, desktop optimized |
-| Hero Section | Professional introduction with CTA |
-| About Section | Personal profile + summary |
-| Skills Section | Visual tech stack badges |
-| Projects Section | 3+ featured projects |
-| Contact Section | Email, GitHub, LinkedIn |
-| Parallax Effects | Smooth scroll depth |
-| Scroll Animations | Fade, slide, stagger |
-| Accessibility | Reduced motion support |
-| SEO Optimized | Meta tags + Lighthouse ready |
+A responsive, single-page personal portfolio web application built with **React**, **Vite**, **Tailwind CSS**, and **Framer Motion**. It features fluid physics-based animations, dynamic dark/light theme toggling with browser `localStorage` persistence, robust form validation via `react-hook-form`, and automated draft state saving.
 
 ---
 
-# 🛠 Tech Stack
+## 🚀 Key Features
 
-| Technology | Usage |
-|-----------|------|
-| React.js | Frontend Framework |
-| Vite | Fast Build Tool |
-| Tailwind CSS | Styling |
-| Framer Motion | Animations |
-| React Icons | Icons |
-| GitHub | Version Control |
-| Vercel | Deployment |
+- **Dynamic Dark / Light Mode**: Seamless theme switching with class-based theming persisted in browser `localStorage`.
+- **Framer Motion Animations**: Fluid hero heading, responsive stagger transitions, interactive project cards, and animated skill badges.
+- **Form Validation & Draft Persistence**: Contact form built with `react-hook-form` validating required fields and email formats, with automatic `localStorage` draft saving (`form_draft`).
+- **Responsive Architecture**: Mobile-first responsive layouts with collapsible navigation and desktop-optimized grids.
+- **Smooth Navigation**: Anchor link scrolling to `#projects`, `#contact`, and all key portfolio sections.
+- **Accessibility & SEO**: WCAG-aligned focus rings, descriptive ARIA attributes, semantic HTML5 structure, and `prefers-reduced-motion` support.
 
 ---
 
-# 📂 Folder Structure
+## 🛠 Tech Stack
 
-```bash
-portfolio-site/
-│
-├── public/
-│   ├── profile.jpg
-│   ├── desktop-preview.png
-│   ├── mobile-preview.png
-│   ├── animations-preview.gif
-│   └── resume.pdf
-│
+| Technology | Purpose |
+|------------|---------|
+| **React 19** | Declarative Component-driven UI |
+| **Vite** | Lightning-fast Build Tool & Dev Server |
+| **Tailwind CSS** | Utility-first Design System & Dark Mode |
+| **Framer Motion** | Declarative Animations & Gestures |
+| **React Hook Form** | Performant Form Validation & State Management |
+| **React Icons** | Clean Scalable Vector Icons |
+
+---
+
+## 📂 Architecture & Directory Structure
+
+```text
+personal-portfolio/
+├── index.html                 # HTML entry point with meta tags & SEO preconnects
+├── package.json               # Dependencies and build scripts
+├── tailwind.config.js         # Tailwind configuration with class-based darkMode
+├── postcss.config.js          # PostCSS processor plugins
+├── vite.config.js             # Vite configuration
 ├── src/
-│   ├── components/
-│   │   ├── Navbar.jsx
-│   │   ├── Hero.jsx
-│   │   ├── About.jsx
-│   │   ├── Skills.jsx
-│   │   ├── Projects.jsx
-│   │   └── Contact.jsx
-│   │
-│   ├── App.jsx
-│   ├── main.jsx
-│   └── index.css
-│
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
-⚙ Installation & Setup
-Clone Repository
-git clone https://github.com/yourusername/portfolio-site.git
-cd portfolio-site
-Install Dependencies
+│   ├── main.jsx               # React DOM root render
+│   ├── App.jsx                # Application root container (data-testid="app-root") & theme provider
+│   ├── index.css              # Global styles, fonts, smooth scroll, & glassmorphism
+│   ├── data.js                # Structured portfolio data (projects, skills, profile)
+│   └── components/
+│       ├── Navbar.jsx         # Navigation header, mobile menu, & theme toggle button
+│       ├── Hero.jsx           # Hero banner with Framer Motion animated heading
+│       ├── About.jsx          # Bio, experience overview, and achievements
+│       ├── Skills.jsx         # Technical proficiencies grid with motion elements
+│       ├── Projects.jsx       # Project showcase grid with repository & demo links
+│       ├── Contact.jsx        # Contact form with validation & Local Storage draft saving
+│       └── Footer.jsx         # Footer credits and social profile links
+└── dist/                      # Production build output
+```
+
+---
+
+## 🧪 Evaluation Test IDs & Requirements
+
+| Requirement | Test ID | Description |
+|-------------|---------|-------------|
+| **App Root** | `data-testid="app-root"` | Root container applying `.dark` class dynamically and syncing `theme` with `localStorage` |
+| **Theme Toggle** | `data-testid="theme-toggle"` | Button toggling theme between `"light"` and `"dark"` |
+| **Hero Heading** | `data-testid="hero-heading"` | Framer Motion animated heading component (`<motion.h1>`) |
+| **Project Grid** | `data-testid="project-grid"` | Grid container displaying 4+ project items |
+| **Project Item** | `data-testid="project-item"` | Individual project cards inside the grid |
+| **Skills List** | `data-testid="skills-list"` | Skills container displaying 3+ skill items |
+| **Skill Item** | `data-testid="skill-item"` | Individual skill items enhanced with Framer Motion |
+| **Contact Name** | `data-testid="contact-name"` | Name input field |
+| **Contact Email** | `data-testid="contact-email"` | Email input field |
+| **Contact Message** | `data-testid="contact-message"` | Message textarea field |
+| **Contact Submit** | `data-testid="contact-submit"` | Form submit button |
+| **Name Error** | `data-testid="name-error"` | Validation error for empty name |
+| **Email Error** | `data-testid="email-error"` | Validation error for invalid email |
+| **Message Error** | `data-testid="message-error"` | Validation error for empty message |
+| **Nav Projects** | `data-testid="nav-projects"` | Navigation anchor linking to `#projects` |
+| **Nav Contact** | `data-testid="nav-contact"` | Navigation anchor linking to `#contact` |
+| **Form Persistence** | `localStorage: form_draft` | Auto-saves and restores form inputs on reload |
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Install Dependencies
+```bash
 npm install
-Run Development Server
+```
+
+### 2. Start Development Server
+```bash
 npm run dev
-Build Production
+```
+
+### 3. Build for Production
+```bash
 npm run build
+```
 
-📊 Lighthouse Scores Target
-CategoryScorePerformance80+Accessibility90+Best Practices90+SEO85+
+### 4. Preview Production Build
+```bash
+npm run preview
+```
 
-♿ Accessibility Support
-@media (prefers-reduced-motion: reduce) {  * {    animation-duration: 0.01ms !important;    transition-duration: 0.01ms !important;    scroll-behavior: auto !important;  }}
+---
 
-📌 Featured Projects
-1️⃣ AI Resume Builder
-
-React
-
-Node.js
-
-MongoDB
-
-Docker
-
-2️⃣ Real-Time Collaborative Whiteboard
-
-React
-
-Socket.io
-
-Canvas API
-
-PostgreSQL
-
-3️⃣ Job Board Application
-
-React
-
-Tailwind CSS
-
-LocalStorage
-
-Docker
-
-
-
-👩‍💻 Author
-Blessy Nookathati
-
-📧 Email: your-email@example.com
-
-💼 LinkedIn: https://linkedin.com/in/yourprofile
-
-💻 GitHub: https://github.com/yourusername
-
-
-🏆 Achievements
-
-Fully responsive
-
-Production-ready
-
-Recruiter-friendly
-
-Modern UI/UX
-
-Smooth animations
-
-Public deployment
-
-
-📜 License
-This project is licensed under the MIT License.
-
-⭐ Support
-If you like this project:
-Give it a ⭐ on GitHub!
-
+## 📄 License
+MIT License © 2026 Blessy Nookathati
